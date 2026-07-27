@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="140dp"
+    android:height="150dp"
+    android:viewportWidth="200"
+    android:viewportHeight="216">
+
+    <!-- Outer drop -->
+    <path
+        android:pathData="M100,14 C100,14 32,116 32,156 C32,192 62,216 100,216 C138,216 168,192 168,156 C168,116 100,14 100,14 Z"
+        android:fillColor="#E0302C" />
+
+    <!-- Center person: head -->
+    <path
+        android:pathData="M100,78 m-13,0 a13,13 0 1,1 26,0 a13,13 0 1,1 -26,0"
+        android:fillColor="#FFFFFF" />
+    <!-- Center person: body -->
+    <path
+        android:pathData="M77,150 C77,120 86,104 100,104 C114,104 123,120 123,150 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Left person: head -->
+    <path
+        android:pathData="M62,108 m-10,0 a10,10 0 1,1 20,0 a10,10 0 1,1 -20,0"
+        android:fillColor="#FFFFFF" />
+    <!-- Left person: body -->
+    <path
+        android:pathData="M45,158 C45,136 52,124 62,124 C72,124 79,136 79,158 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Right person: head -->
+    <path
+        android:pathData="M138,108 m-10,0 a10,10 0 1,1 20,0 a10,10 0 1,1 -20,0"
+        android:fillColor="#FFFFFF" />
+    <!-- Right person: body -->
+    <path
+        android:pathData="M121,158 C121,136 128,124 138,124 C148,124 155,136 155,158 Z"
+        android:fillColor="#FFFFFF" />
+
+    <!-- Connecting stem down to the point of the drop -->
+    <path
+        android:pathData="M96,150 L104,150 L110,192 L90,192 Z"
+        android:fillColor="#FFFFFF" />
+
+</vector>

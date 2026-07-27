@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="170dp"
+    android:viewportWidth="400"
+    android:viewportHeight="170">
+
+    <!-- Skyline silhouette -->
+    <path
+        android:fillColor="#F6D4D4"
+        android:fillAlpha="0.7"
+        android:pathData="M0,140 L0,110 L22,110 L22,90 L44,90 L44,120 L66,120 L66,80 L96,80 L96,140 Z" />
+
+    <!-- Hospital block with cross -->
+    <path
+        android:fillColor="#F6D4D4"
+        android:fillAlpha="0.7"
+        android:pathData="M110,140 L110,70 L170,70 L170,140 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillAlpha="0.9"
+        android:pathData="M133,85h14v12h12v14h-12v12h-14v-12h-12v-14h12z" />
+
+    <!-- Trees -->
+    <path
+        android:fillColor="#F0BFBF"
+        android:fillAlpha="0.75"
+        android:pathData="M186,140 L186,118 L182,118 L190,100 L198,118 L194,118 L194,140 Z" />
+    <path
+        android:fillColor="#F0BFBF"
+        android:fillAlpha="0.75"
+        android:pathData="M300,140 L300,120 L296,120 L304,102 L312,120 L308,120 L308,140 Z" />
+
+    <!-- More buildings -->
+    <path
+        android:fillColor="#F6D4D4"
+        android:fillAlpha="0.7"
+        android:pathData="M210,140 L210,95 L238,95 L238,75 L266,75 L266,140 Z" />
+    <path
+        android:fillColor="#F6D4D4"
+        android:fillAlpha="0.7"
+        android:pathData="M320,140 L320,100 L346,100 L346,115 L366,115 L366,140 Z" />
+    <path
+        android:fillColor="#F6D4D4"
+        android:fillAlpha="0.7"
+        android:pathData="M366,140 L366,125 L400,125 L400,140 Z" />
+
+    <!-- Location pin above skyline, right side -->
+    <path
+        android:fillColor="#F0BFBF"
+        android:fillAlpha="0.8"
+        android:pathData="M356,60 C356,60 344,74 344,82 C344,89 349.4,94 356,94 C362.6,94 368,89 368,82 C368,74 356,60 356,60 Z" />
+
+    <!-- Red wave across the very bottom -->
+    <path
+        android:fillColor="#E0302C"
+        android:pathData="M0,170 L0,150 C60,120 130,168 200,150 C270,132 330,168 400,145 L400,170 Z" />
+
+</vector>

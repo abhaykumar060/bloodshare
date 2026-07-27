@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="340dp"
+    android:viewportWidth="400"
+    android:viewportHeight="340">
+
+    <!-- Top-left red corner blob -->
+    <path
+        android:fillColor="#E0302C"
+        android:pathData="M0,0 L140,0 C90,40 50,90 40,150 C32,195 18,230 0,255 Z" />
+
+    <!-- Soft pink diagonal accent over the red corner -->
+    <path
+        android:fillColor="#F6C9C9"
+        android:fillAlpha="0.55"
+        android:pathData="M0,0 L95,0 C60,45 34,100 26,165 C20,205 10,235 0,255 Z" />
+
+    <!-- Top-right pink swoop -->
+    <path
+        android:fillColor="#F8D6D6"
+        android:fillAlpha="0.6"
+        android:pathData="M400,0 L400,150 C372,190 345,225 330,260 C352,215 372,160 372,110 C372,70 388,30 400,0 Z" />
+
+    <!-- Right-side red curve lower down -->
+    <path
+        android:fillColor="#E0302C"
+        android:pathData="M400,215 L400,340 L262,340 C300,310 335,275 358,255 C375,240 390,225 400,215 Z" />
+
+</vector>

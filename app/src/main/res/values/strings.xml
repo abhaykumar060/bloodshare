@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="BloodShare">BloodShare</string>
+    <string name="app_name_blood">Blood</string>
+    <string name="app_name_share">Share</string>
+    <string name="tagline_plain">Connecting Donors. </string>
+    <string name="tagline_accent">Saving Lives.</string>
+
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="login_subtitle">Login to continue</string>
+
+    <string name="hint_email">Email or Phone Number</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="or_continue_with">or continue with</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="register">Register</string>
+
+    <string name="toggle_password_visibility">Show or hide password</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
+    <string name="greeting_format">Hello, %1$s 👋</string>
+    <string name="hint_blood_group">Blood Group (e.g. A+)</string>
+</resources>

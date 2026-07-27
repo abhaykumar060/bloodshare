@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/field_bg">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_toolbar_red"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp"
+        android:elevation="4dp">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Back"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:text="My Requests"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:id="@+id/btnAddRequest"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_plus_round"
+            android:contentDescription="New Request"/>
+    </LinearLayout>
+
+    <!-- Filter Chips -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:id="@+id/layoutFilterChips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="8dp">
+
+            <TextView
+                android:id="@+id/chipAll"
+                style="@style/FilterChipSelected"
+                android:text="All"/>
+
+            <TextView
+                android:id="@+id/chipPending"
+                style="@style/FilterChipUnselected"
+                android:text="Pending"/>
+
+            <TextView
+                android:id="@+id/chipApproved"
+                style="@style/FilterChipUnselected"
+                android:text="Approved"/>
+
+            <TextView
+                android:id="@+id/chipFulfilled"
+                style="@style/FilterChipUnselected"
+                android:text="Fulfilled"/>
+
+            <TextView
+                android:id="@+id/chipRejected"
+                style="@style/FilterChipUnselected"
+                android:text="Rejected"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Request List -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRequests"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="16dp"/>
+
+            <!-- Empty State -->
+            <LinearLayout
+                android:id="@+id/layoutEmptyState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/ic_empty_request"
+                    android:alpha="0.6"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="No requests yet"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Your blood requests will show up here."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"/>
+
+                <LinearLayout
+                    android:id="@+id/btnEmptyNewRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/bg_submit_button"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingHorizontal="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+ Request Blood"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="14sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

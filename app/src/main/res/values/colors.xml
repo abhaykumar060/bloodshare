@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Colors -->
+    <color name="blood_red">#E53935</color>
+    <color name="brand_red">#E0302C</color>
+    <color name="brand_red_dark">#C41E1E</color>
+    <color name="brand_pink_soft">#F9D9D9</color>
+    <color name="brand_pink_pale">#FCE9E9</color>
+    <color name="brand_pink_faint">#FDF1F1</color>
+    <color name="blood_red_dark">#C62828</color>
+    <color name="blood_red_light">#FCE4E4</color>
+    <color name="section_icon_red">#E53935</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1B1B25</color>
+    <color name="text_secondary">#8A8A93</color>
+    <color name="text_hint">#A6A6AE</color>
+    <color name="text_dark">#212121</color>
+    <color name="text_gray">#757575</color>
+    <color name="hint_gray">#9E9E9E</color>
+
+    <!-- UI Elements -->
+    <color name="field_bg">#F4F4F6</color>
+    <color name="field_border">#ECECEF</color>
+    <color name="divider">#E4E4E8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green_check">#43A047</color>
+    <color name="info_box_bg">#EAF2FB</color>
+
+    <!-- Verification / Specific Backgrounds -->
+    <color name="verification_bg">#FFF3F3</color>
+    <color name="verification_border">#EF9A9A</color>
+    <color name="accepted_doc_bg">#FCE9E9</color>
+
+    <color name="status_pending_bg">#FFF4E0</color>
+    <color name="status_pending_text">#B8720A</color>
+    <color name="status_approved_bg">#E3F2E3</color>
+    <color name="status_approved_text">#2E7D32</color>
+    <color name="status_fulfilled_bg">#E3F0FB</color>
+    <color name="status_fulfilled_text">#1565C0</color>
+    <color name="status_rejected_bg">#FDE7E7</color>
+    <color name="status_rejected_text">#C41E1E</color>
+
+
+</resources>
